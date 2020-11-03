@@ -1,12 +1,13 @@
 import React from 'react';
 import md5 from 'md5-hash'
 
-import {Form, Input, Button} from 'antd';
+import {Form, Input} from 'antd';
 import {UserOutlined, LockOutlined} from "@ant-design/icons/lib/icons";
 import {BASE_URL, LOGIN, URLS, WRONG_DATA} from "../../constants/constants";
 import {openNotification} from "../../notifications/showNotification";
 import {useHistory} from "react-router-dom";
-import CustomForm from "../../components/CustomForm/CustomForm";
+import CustomForm from "../../components/CustomUI/CustomForm";
+import CustomButton from "../../components/CustomUI/CustomButton";
 
 const formItemLayout = {
     labelCol: {span: 4},
@@ -36,9 +37,7 @@ const Login = ({setState}) => {
     return (
         <>
             <CustomForm
-                formTitle="Log in"
-                name="normal_login"
-                className="login-form"
+                formTitle="Sign in"
                 onFinish={onFinish}
             >
                 <Form.Item
@@ -60,9 +59,9 @@ const Login = ({setState}) => {
                     />
                 </Form.Item>
                 <Form.Item {...formItemLayout}>
-                    <Button type="primary" htmlType="submit" className="login-form-button">
+                    <CustomButton>
                         Log in
-                    </Button>
+                    </CustomButton>
                 </Form.Item>
             </CustomForm>
         </>

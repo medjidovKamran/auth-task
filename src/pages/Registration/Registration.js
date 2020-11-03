@@ -1,11 +1,12 @@
 import React from 'react';
-import {Form, Input, Button} from 'antd';
+import {Form, Input} from 'antd';
 import {UserOutlined, LockOutlined} from "@ant-design/icons/lib/icons";
 import {BASE_URL, REGISTER, USER_IS_EXIST} from "../../constants/constants";
 import {openNotification} from "../../notifications/showNotification";
 import {getFetchOptions} from "../../utils/getFetchOptions";
 import md5 from 'md5-hash'
-import CustomForm from "../../components/CustomForm/CustomForm";
+import CustomForm from "../../components/CustomUI/CustomForm";
+import CustomButton from "../../components/CustomUI/CustomButton";
 
 const formItemLayout = {
     labelCol: {span: 4},
@@ -45,9 +46,7 @@ const Registration = () => {
     return (
         <>
             <CustomForm
-                formTitle="Registration"
-                name="normal_login"
-                className="login-form"
+                formTitle="Sign Up"
                 onFinish={onFinish}
             >
                 <Form.Item
@@ -55,7 +54,7 @@ const Registration = () => {
                     name="username"
                     rules={[{required: true, message: 'Username required!'}]}
                 >
-                    <Input prefix={<UserOutlined className="site-form-item-icon"/>} placeholder="Username"/>
+                    <Input prefix={<UserOutlined/>} placeholder="Username"/>
                 </Form.Item>
                 <Form.Item
                     {...formItemLayout}
@@ -63,15 +62,15 @@ const Registration = () => {
                     rules={[{required: true, message: 'Password is required!'}]}
                 >
                     <Input
-                        prefix={<LockOutlined className="site-form-item-icon"/>}
+                        prefix={<LockOutlined/>}
                         type="password"
                         placeholder="Password"
                     />
                 </Form.Item>
                 <Form.Item {...formItemLayout}>
-                    <Button type="primary" htmlType="submit" className="login-form-button">
-                        Sign in
-                    </Button>
+                    <CustomButton>
+                        Sign up
+                    </CustomButton>
                 </Form.Item>
             </CustomForm>
         </>

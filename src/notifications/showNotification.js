@@ -1,4 +1,3 @@
-import React from 'react';
 import {notification} from "antd";
 import {USER_IS_EXIST, LOGIN, REGISTER, WRONG_DATA} from "../constants/constants";
 

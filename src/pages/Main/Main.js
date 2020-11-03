@@ -1,8 +1,9 @@
 import React from 'react';
-import {Button, Row, Col} from "antd";
 import {useHistory} from "react-router-dom";
-import neo from '../../assets/img/red_blue_button.jpg'
 import {URLS} from "../../constants/constants";
+import {Row, Col} from "antd";
+import CustomButton from "../../components/CustomUI/CustomButton";
+import neo from '../../assets/img/red_blue_button.jpg'
 
 const Main = () => {
     const history = useHistory()
@@ -15,18 +16,18 @@ const Main = () => {
                 <p><strong> There will be no turning back! </strong></p>
                 <p>Make your choice!</p>
                 <p>
-                    <Button
+                    <CustomButton
                         onClick={() => history.push(URLS.login)}
                         className="mr-5 mb-5"
-                        type="primary">
-                        Login
-                    </Button>
-                    <Button
+                    >
+                        Sign in
+                    </CustomButton>
+                    <CustomButton
                         onClick={() => history.push(URLS.register)}
                         className="mr-5 mb-5"
                         type="danger">
-                        Register
-                    </Button>
+                        Sign up
+                    </CustomButton>
                 </p>
                 <img className="home-page_image" src={neo} alt=""/>
             </Col>
