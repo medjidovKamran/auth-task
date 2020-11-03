@@ -5,28 +5,28 @@ import MainHeader from './components/MainHeader';
 import { BrowserRouter as Router } from 'react-router-dom';
 import './App.css';
 
-const {Content} = Layout;
+const { Content } = Layout;
 
 function App() {
-    const [state, setState] = React.useState({
-        isLogged: false,
-    });
-    const applicationState = {state, setState};
+  const [state, setState] = React.useState({
+    isLogged: false,
+  });
+  const applicationState = { state, setState };
 
-    return (
-        <Router>
-            <div className="App">
-                <MainHeader {...applicationState}/>
-                <Layout>
-                    <Content className="content-layout mt-20">
-                        <div className="site-layout-content">
-                            <Routes applicationState={applicationState}/>
-                        </div>
-                    </Content>
-                </Layout>
+  return (
+    <Router>
+      <div className="App">
+        <MainHeader {...applicationState} />
+        <Layout>
+          <Content className="content-layout mt-20">
+            <div className="site-layout-content">
+              <Routes applicationState={applicationState} />
             </div>
-        </Router>
-    );
+          </Content>
+        </Layout>
+      </div>
+    </Router>
+  );
 }
 
 export default App;
