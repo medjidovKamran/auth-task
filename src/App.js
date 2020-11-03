@@ -18,7 +18,7 @@ function App() {
             <div className="App">
                 <MainHeader {...applicationState}/>
                 <Layout>
-                    <Content className="content-layout mt-20" style={{}}>
+                    <Content className="content-layout mt-20">
                         <div className="site-layout-content">
                             <Routes applicationState={applicationState}/>
                         </div>

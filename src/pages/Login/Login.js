@@ -3,7 +3,7 @@ import md5 from 'md5-hash'
 
 import {Form, Input, Button} from 'antd';
 import {UserOutlined, LockOutlined} from "@ant-design/icons/lib/icons";
-import {BASE_URL, LOGIN, URLS} from "../../constants/constants";
+import {BASE_URL, LOGIN, URLS, WRONG_DATA} from "../../constants/constants";
 import {openNotification} from "../../notifications/showNotification";
 import {useHistory} from "react-router-dom";
 import CustomForm from "../../components/CustomForm/CustomForm";
@@ -26,8 +26,10 @@ const Login = ({setState}) => {
                 history.push(URLS.home)
                 openNotification(LOGIN)
             }
+
         } catch (e) {
             console.log(e)
+            openNotification(WRONG_DATA)
         }
     }
 

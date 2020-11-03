@@ -3,6 +3,7 @@ export const REGISTER = "register"
 export const LOGIN = "login"
 export const HOME = "/"
 export const USER_IS_EXIST = "user is exist"
+export const WRONG_DATA = "wrong data"
 
 export const URLS = {
     login: '/login',
