@@ -5,5 +5,5 @@ export const getFetchOptions = (method, body) => {
             'Content-Type': 'application/json'
         },
         body: JSON.stringify(body)
-    }
-}
+    };
+};

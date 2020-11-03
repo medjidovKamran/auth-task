@@ -2,15 +2,39 @@
   "users": [
     {
       "id": "22",
-      "username": "djkamry",
+      "email": "djkamry",
       "password": "5a32b032fc510853f5fef7b637743a00",
       "createdAt": "2020-10-23 18:00"
     },
     {
-      "username": "kama",
+      "email": "kama",
       "password": "68944d7c9fbc300426a92fca45b6e014",
       "createdAt": "03.11.2020, 18:55:59",
       "id": "HFaOPFg"
+    },
+    {
+      "email": "djkamry@gmail.com",
+      "password": "827ccb0eea8a706c4c34a16891f84e7b",
+      "createdAt": "03.11.2020, 21:31:35",
+      "id": "c4SfHXL"
+    },
+    {
+      "email": "djkamry2@gmail.com",
+      "password": "5a32b032fc510853f5fef7b637743a00",
+      "createdAt": "03.11.2020, 21:34:37",
+      "id": "yWGZ_eE"
+    },
+    {
+      "email": "djkamry3@gmail.com",
+      "password": "5a32b032fc510853f5fef7b637743a00",
+      "createdAt": "03.11.2020, 21:35:42",
+      "id": "oNd0TH6"
+    },
+    {
+      "email": "djkamry33@gmail.com",
+      "password": "b706835de79a2b4e80506f582af3676a",
+      "createdAt": "03.11.2020, 22:04:56",
+      "id": "x50ZTvp"
     }
   ]
 }
