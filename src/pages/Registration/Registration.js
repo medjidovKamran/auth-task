@@ -5,6 +5,7 @@ import {BASE_URL, REGISTER, USER_IS_EXIST} from "../../constants/constants";
 import {openNotification} from "../../notifications/showNotification";
 import {getFetchOptions} from "../../utils/getFetchOptions";
 import md5 from 'md5-hash'
+import CustomForm from "../../components/CustomForm/CustomForm";
 
 const formItemLayout = {
     labelCol: {span: 4},
@@ -43,11 +44,10 @@ const Registration = () => {
 
     return (
         <>
-            <h1>Registration</h1>
-            <Form
+            <CustomForm
+                formTitle="Registration"
                 name="normal_login"
                 className="login-form"
-                initialValues={{remember: true}}
                 onFinish={onFinish}
             >
                 <Form.Item
@@ -72,9 +72,8 @@ const Registration = () => {
                     <Button type="primary" htmlType="submit" className="login-form-button">
                         Sign in
                     </Button>
-                    Or <a href="">log in</a>
                 </Form.Item>
-            </Form>
+            </CustomForm>
         </>
     );
 };

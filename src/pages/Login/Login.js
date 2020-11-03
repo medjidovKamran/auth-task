@@ -6,13 +6,14 @@ import {UserOutlined, LockOutlined} from "@ant-design/icons/lib/icons";
 import {BASE_URL, LOGIN, URLS} from "../../constants/constants";
 import {openNotification} from "../../notifications/showNotification";
 import {useHistory} from "react-router-dom";
+import CustomForm from "../../components/CustomForm/CustomForm";
 
 const formItemLayout = {
     labelCol: {span: 4},
     wrapperCol: {span: 8},
 };
 
-const Login = ({state, setState}) => {
+const Login = ({setState}) => {
     const history = useHistory();
 
     const onFinish = async (values) => {
@@ -30,14 +31,12 @@ const Login = ({state, setState}) => {
         }
     }
 
-
     return (
         <>
-            <h1>Log In</h1>
-            <Form
+            <CustomForm
+                formTitle="Log in"
                 name="normal_login"
                 className="login-form"
-                initialValues={{remember: true}}
                 onFinish={onFinish}
             >
                 <Form.Item
@@ -62,9 +61,8 @@ const Login = ({state, setState}) => {
                     <Button type="primary" htmlType="submit" className="login-form-button">
                         Log in
                     </Button>
-                    Or <a href="">register now!</a>
                 </Form.Item>
-            </Form>
+            </CustomForm>
         </>
     )
 };

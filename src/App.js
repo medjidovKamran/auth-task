@@ -16,9 +16,7 @@ function App() {
     return (
         <Router>
             <div className="App">
-                <Layout>
-                    <MainHeader {...applicationState}/>
-                </Layout>
+                <MainHeader {...applicationState}/>
                 <Layout>
                     <Content className="content-layout mt-20" style={{}}>
                         <div className="site-layout-content">
