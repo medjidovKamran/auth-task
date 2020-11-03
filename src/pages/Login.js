@@ -11,7 +11,7 @@ import CustomButton from '../components/CustomButton';
 
 const formItemLayout = {
   labelCol: { span: 4 },
-  wrapperCol: { span: 8 },
+  wrapperCol: { span: 16 },
 };
 
 const Login = ({ setState }) => {
