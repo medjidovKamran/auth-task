@@ -1,5 +1,5 @@
 import { notification } from 'antd';
-import { USER_IS_EXIST, SIGN_IN, REGISTER, WRONG_DATA, SIGN_OUT } from '../constants';
+import { USER_IS_EXIST, SIGN_IN, REGISTER, WRONG_DATA, SIGN_OUT } from './constants';
 
 export const openNotification = (value) => {
     switch (value) {
@@ -31,6 +31,8 @@ export const openNotification = (value) => {
             return notification.info({
                 message: 'You are logged out.',
             });
+        default:
+            return null;
     }
 
 };

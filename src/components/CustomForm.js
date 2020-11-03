@@ -11,6 +11,7 @@ const CustomForm = ({
                         labelAlign,
                         children
                     }) => {
+
     return (
         <Form
             name={name}

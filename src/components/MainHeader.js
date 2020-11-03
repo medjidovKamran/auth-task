@@ -1,13 +1,13 @@
 import React from 'react';
 import { Layout, Menu } from 'antd';
 import { NavLink, withRouter } from 'react-router-dom';
-import { SIGN_OUT, URLS } from '../constants';
-import { openNotification } from "../notifications/showNotification";
+import { SIGN_OUT, URLS } from '../utils/constants';
+import { openNotification } from "../utils/showNotification";
 
 const {Header} = Layout;
 
 const MainHeader = ({state, setState, location}) => {
-    console.log(location);
+
     return (
         <Header>
             <Menu theme="dark" mode="horizontal" selectedKeys={[location.pathname]}>

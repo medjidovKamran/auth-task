@@ -1,6 +1,6 @@
 import React from 'react';
 import { useHistory } from 'react-router-dom';
-import { URLS } from '../constants';
+import { URLS } from '../utils/constants';
 import CustomButton from '../components/CustomButton';
 
 const Home = () => {

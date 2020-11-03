@@ -3,8 +3,8 @@ import md5 from 'md5-hash';
 
 import { Form, Input } from 'antd';
 import { UserOutlined, LockOutlined } from '@ant-design/icons/lib/icons';
-import { BASE_URL, SIGN_IN, URLS, WRONG_DATA } from '../constants';
-import { openNotification } from '../notifications/showNotification';
+import { BASE_URL, SIGN_IN, URLS, WRONG_DATA } from '../utils/constants';
+import { openNotification } from '../utils/showNotification';
 import { useHistory } from 'react-router-dom';
 import CustomForm from '../components/CustomForm';
 import CustomButton from '../components/CustomButton';

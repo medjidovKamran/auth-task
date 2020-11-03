@@ -8,8 +8,11 @@
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
     "antd": "^4.8.0",
+    "eslint-config-prettier": "^6.15.0",
+    "eslint-plugin-prettier": "^3.1.4",
     "json-server": "^0.16.2",
     "md5-hash": "^1.0.1",
+    "prettier": "^2.1.2",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-router-dom": "^5.2.0",
@@ -20,7 +23,8 @@
     "server": "json-server users.json",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "eslint": "node_modules/.bin/eslint src/"
   },
   "eslintConfig": {
     "extends": [

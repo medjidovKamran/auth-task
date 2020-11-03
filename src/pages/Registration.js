@@ -1,8 +1,8 @@
 import React from 'react';
 import { Form, Input } from 'antd';
 import { UserOutlined, LockOutlined } from '@ant-design/icons/lib/icons';
-import { BASE_URL, REGISTER, URLS, USER_IS_EXIST } from '../constants';
-import { openNotification } from '../notifications/showNotification';
+import { BASE_URL, REGISTER, URLS, USER_IS_EXIST } from '../utils/constants';
+import { openNotification } from '../utils/showNotification';
 import { getFetchOptions } from '../utils/getFetchOptions';
 import md5 from 'md5-hash';
 import CustomForm from '../components/CustomForm';

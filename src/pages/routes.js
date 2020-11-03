@@ -4,13 +4,13 @@ import Home from "./Home";
 import Login from "./Login";
 import Registration from "./Registration";
 import Profile from "./Profile";
-import { SIGN_IN, SIGN_OUT, URLS } from '../constants';
+import { URLS } from '../utils/constants';
 
 const Routes = ({applicationState}) => {
 
     return (
         <Switch>
-            <Route exact path='/'>
+            <Route exact path="/">
                 <Home/>
             </Route>
             <Route exact path={URLS.login}>
